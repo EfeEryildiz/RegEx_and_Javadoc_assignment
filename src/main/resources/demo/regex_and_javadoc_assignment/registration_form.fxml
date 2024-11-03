@@ -7,7 +7,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom right, #f0f2f5, #ffffff);"
       xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="RegistrationFormController">
+      fx:controller="demo.regex_and_javadoc_assignment.RegistrationFormController">
 
     <padding>
         <Insets top="30" right="30" bottom="30" left="30"/>
@@ -16,7 +16,7 @@
     <VBox alignment="CENTER" spacing="15.0" styleClass="form-container"
           style="-fx-background-color: white; -fx-padding: 25; -fx-border-radius: 10;
                  -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);"
-          maxWidth="500">
+          maxWidth="1000">
 
         <Label text="Student Registration" styleClass="header-label">
             <font>
@@ -69,6 +69,11 @@
                        GridPane.columnIndex="1" GridPane.rowIndex="4"/>
             <Label fx:id="zipValidation" styleClass="validation-label"
                    GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+            <!-- Add this somewhere in your GridPane in registration_form.fxml -->
+            <Label fx:id="statusMessage" styleClass="status-message"
+                   GridPane.columnIndex="1" GridPane.rowIndex="5"
+                   GridPane.halignment="CENTER"/>
 
             <!-- Submit Button -->
             <HBox alignment="CENTER_RIGHT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
